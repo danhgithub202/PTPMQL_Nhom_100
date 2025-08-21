@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Ptpmql_100\\DemoMVC\\DemoMVC.csproj": {}
+    "D:\\Ptpmql_100\\DemoMvc\\DemoMVC.csproj": {}
   },
   "projects": {
-    "D:\\Ptpmql_100\\DemoMVC\\DemoMVC.csproj": {
+    "D:\\Ptpmql_100\\DemoMvc\\DemoMVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Ptpmql_100\\DemoMVC\\DemoMVC.csproj",
+        "projectUniqueName": "D:\\Ptpmql_100\\DemoMvc\\DemoMVC.csproj",
         "projectName": "DemoMVC",
-        "projectPath": "D:\\Ptpmql_100\\DemoMVC\\DemoMVC.csproj",
+        "projectPath": "D:\\Ptpmql_100\\DemoMvc\\DemoMVC.csproj",
         "packagesPath": "C:\\Users\\acer\\.nuget\\packages\\",
-        "outputPath": "D:\\Ptpmql_100\\DemoMVC\\obj\\",
+        "outputPath": "D:\\Ptpmql_100\\DemoMvc\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\acer\\AppData\\Roaming\\NuGet\\NuGet.Config"
