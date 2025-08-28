@@ -10,10 +10,5 @@ namespace DemoMVC.Controllers
             return View();
         } 
       
-
-        public string Welcome()
-        {
-            return "XIN CHAO!";
-        }
     }
 }

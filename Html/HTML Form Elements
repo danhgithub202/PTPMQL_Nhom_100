@@ -1,0 +1,83 @@
+<!--The <input> Element-->
+<label for="fname">Đào Sông Danh - 2121050308:</label>
+<input type="text" id="fname" name="fname">
+
+<!--The <select> Element-->
+<label for="cars">Đào Sông Danh - 2121050308:</label>
+<select id="cars" name="cars">
+  <option value="volvo">Đào Sông Danh - 2121050308</option>
+  <option value="saab">Đào Sông Danh - 2121050308</option>
+  <option value="fiat">Đào Sông Danh - 2121050308</option>
+  <option value="audi">Đào Sông Danh - 2121050308</option>
+</select>
+
+<!--Pre-selected option-->
+<option value="fiat" selected>Đào Sông Danh - 2121050308</option>
+
+<!--Visible Values (size attribute)-->
+<label for="cars">Đào Sông Danh - 2121050308:</label>
+<select id="cars" name="cars" size="3">
+  <option value="volvo">Đào Sông Danh - 2121050308</option>
+  <option value="saab">Đào Sông Danh - 2121050308</option>
+  <option value="fiat">Đào Sông Danh - 2121050308</option>
+  <option value="audi">Đào Sông Danh - 2121050308</option>
+</select>
+
+<!--Multiple Selections-->
+<label for="cars">Đào Sông Danh - 2121050308:</label>
+<select id="cars" name="cars" size="4" multiple>
+  <option value="volvo">Đào Sông Danh - 2121050308</option>
+  <option value="saab">Đào Sông Danh - 2121050308</option>
+  <option value="fiat">Đào Sông Danh - 2121050308</option>
+  <option value="audi">Đào Sông Danh - 2121050308</option>
+</select>
+
+<!--The <textarea> Element-->
+<textarea name="message" rows="10" cols="30">
+Đào Sông Danh - 2121050308
+</textarea>
+
+<!--Textarea with CSS style-->
+<textarea name="message" style="width:200px; height:600px;">
+Đào Sông Danh - 2121050308
+</textarea>
+
+<!--The <button> Element-->
+<button type="button" onclick="alert('Đào Sông Danh - 2121050308')">Đào Sông Danh - 2121050308</button>
+
+<!--The <fieldset> and <legend> Elements-->
+<form action="/action_page.php">
+  <fieldset>
+    <legend>Đào Sông Danh - 2121050308:</legend>
+    <label for="fname">Đào Sông Danh - 2121050308:</label><br>
+    <input type="text" id="fname" name="fname" value="Đào Sông Danh - 2121050308"><br>
+    <label for="lname">Đào Sông Danh - 2121050308:</label><br>
+    <input type="text" id="lname" name="lname" value="Đào Sông Danh - 2121050308"><br><br>
+    <input type="submit" value="Đào Sông Danh - 2121050308">
+  </fieldset>
+</form>
+
+<!--The <datalist> Element-->
+<form action="/action_page.php">
+  <input list="browsers">
+  <datalist id="browsers">
+    <option value="Đào Sông Danh - 2121050308">
+    <option value="Đào Sông Danh - 2121050308">
+    <option value="Đào Sông Danh - 2121050308">
+    <option value="Đào Sông Danh - 2121050308">
+    <option value="Đào Sông Danh - 2121050308">
+  </datalist>
+</form>
+
+<!--The <output> Element-->
+<form action="/action_page.php"
+  oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+  0
+  <input type="range"  id="a" name="a" value="50">
+  100 +
+  <input type="number" id="b" name="b" value="50">
+  =
+  <output name="x" for="a b"></output>
+  <br><br>
+  <input type="submit" value="Đào Sông Danh - 2121050308">
+</form>

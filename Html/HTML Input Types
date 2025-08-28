@@ -1,0 +1,149 @@
+<!--Input Type Text-->
+<form>
+  <label for="fname">Đào Sông Danh - 2121050308 First name:</label><br>
+  <input type="text" id="fname" name="fname" value="Đào"><br>
+  <label for="lname">Đào Sông Danh - 2121050308 Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Sông Danh">
+</form>
+
+<!--Input Type Password-->
+<form>
+  <label for="username">Đào Sông Danh - 2121050308 Username:</label><br>
+  <input type="text" id="username" name="username" value="Đào"><br>
+  <label for="pwd">Đào Sông Danh - 2121050308 Password:</label><br>
+  <input type="password" id="pwd" name="pwd" value="SôngDanh123">
+</form>
+
+<!--Input Type Submit-->
+<form action="/action_page.php">
+  <label for="fname">Đào Sông Danh - 2121050308 First name:</label><br>
+  <input type="text" id="fname" name="fname" value="Đào"><br>
+  <label for="lname">Đào Sông Danh - 2121050308 Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Sông Danh"><br><br>
+  <input type="submit" value="Gửi Đào Sông Danh - 2121050308">
+</form>
+
+<!--Input Type Reset-->
+<form action="/action_page.php">
+  <label for="fname">Đào Sông Danh - 2121050308 First name:</label><br>
+  <input type="text" id="fname" name="fname" value="Đào"><br>
+  <label for="lname">Đào Sông Danh - 2121050308 Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Sông Danh"><br><br>
+  <input type="submit" value="Gửi Đào Sông Danh - 2121050308">
+  <input type="reset" value="Xóa Đào Sông Danh - 2121050308">
+</form>
+
+<!--Input Type Radio-->
+<p>Đào Sông Danh - 2121050308 chọn ngôn ngữ Web yêu thích:</p>
+<form>
+  <input type="radio" id="html" name="fav_language" value="HTML">
+  <label for="html">Đào Sông Danh - 2121050308 HTML</label><br>
+  <input type="radio" id="css" name="fav_language" value="CSS">
+  <label for="css">Đào Sông Danh - 2121050308 CSS</label><br>
+  <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+  <label for="javascript">Đào Sông Danh - 2121050308 JavaScript</label>
+</form>
+
+<!--Input Type Checkbox-->
+<form>
+  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+  <label for="vehicle1"> Tôi có một Đào Sông Danh - 2121050308</label><br>
+  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+  <label for="vehicle2"> Tôi có một Sông Đào Sông Danh - 2121050308</label><br>
+  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+  <label for="vehicle3"> Tôi có một Danh Đào Sông Danh - 2121050308</label>
+</form>
+
+<!--Input Type Button-->
+<input type="button" onclick="alert('Xin chào Đào Sông Danh - 2121050308!')" value="Bấm tôi!">
+
+<!--Input Type Color-->
+<form>
+  <label for="favcolor">Chọn màu yêu thích Đào Sông Danh - 2121050308:</label>
+  <input type="color" id="favcolor" name="favcolor">
+</form>
+
+<!--Input Type Date-->
+<form>
+  <label for="birthday">Sinh nhật Đào Sông Danh - 2121050308:</label>
+  <input type="date" id="birthday" name="birthday">
+</form>
+
+<!--Input Type Datetime-local-->
+<form>
+  <label for="birthdaytime">Sinh nhật (ngày và giờ) Đào Sông Danh - 2121050308:</label>
+  <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+</form>
+
+<!--Input Type Email-->
+<form>
+  <label for="email">Nhập email Đào Sông Danh - 2121050308:</label>
+  <input type="email" id="email" name="email" value="daosongdanh@example.com">
+</form>
+
+<!--Input Type Image-->
+<form>
+  <input type="image" src="img_submit.gif" alt="Gửi Đào Sông Danh - 2121050308" width="48" height="48">
+</form>
+
+<!--Input Type File-->
+<form>
+  <label for="myfile">Chọn tệp Đào Sông Danh - 2121050308:</label>
+  <input type="file" id="myfile" name="myfile">
+</form>
+
+<!--Input Type Hidden-->
+<form>
+  <label for="fname">First name Đào Sông Danh - 2121050308:</label>
+  <input type="text" id="fname" name="fname" value="Đào"><br><br>
+  <input type="hidden" id="custId" name="custId" value="3487">
+  <input type="submit" value="Gửi Đào Sông Danh - 2121050308">
+</form>
+
+<!--Input Type Month-->
+<form>
+  <label for="bdaymonth">Sinh nhật (tháng và năm) Đào Sông Danh - 2121050308:</label>
+  <input type="month" id="bdaymonth" name="bdaymonth">
+</form>
+
+<!--Input Type Number-->
+<form>
+  <label for="quantity">Số lượng (1 đến 5) Đào Sông Danh - 2121050308:</label>
+  <input type="number" id="quantity" name="quantity" min="1" max="5">
+</form>
+
+<!--Input Type Range-->
+<form>
+  <label for="vol">Âm lượng (0 đến 50) Đào Sông Danh - 2121050308:</label>
+  <input type="range" id="vol" name="vol" min="0" max="50">
+</form>
+
+<!--Input Type Search-->
+<form>
+  <label for="gsearch">Tìm kiếm Google Đào Sông Danh - 2121050308:</label>
+  <input type="search" id="gsearch" name="gsearch">
+</form>
+
+<!--Input Type Tel-->
+<form>
+  <label for="phone">Nhập số điện thoại Đào Sông Danh - 2121050308:</label>
+  <input type="tel" id="phone" name="phone" placeholder="090-12-345">
+</form>
+
+<!--Input Type Time-->
+<form>
+  <label for="appt">Chọn thời gian Đào Sông Danh - 2121050308:</label>
+  <input type="time" id="appt" name="appt">
+</form>
+
+<!--Input Type Url-->
+<form>
+  <label for="homepage">Trang chủ Đào Sông Danh - 2121050308:</label>
+  <input type="url" id="homepage" name="homepage" value="https://daosongdanh.com">
+</form>
+
+<!--Input Type Week-->
+<form>
+  <label for="week">Chọn tuần Đào Sông Danh - 2121050308:</label>
+  <input type="week" id="week" name="week">
+</form>

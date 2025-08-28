@@ -1,0 +1,62 @@
+<!--The form Attribute-->
+<form action="/action_page.php" id="form1">
+  <label for="fname">Đào Sông Danh - 2121050308:</label>
+  <input type="text" id="fname" name="fname" value="John"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<label for="lname">Đào Sông Danh - 2121050308:</label>
+<input type="text" id="lname" name="lname" form="form1" value="Doe">
+
+<!--The formaction Attribute-->
+<form action="/action_page.php">
+  <label for="fname">Đào Sông Danh - 2121050308:</label>
+  <input type="text" id="fname" name="fname" value="John"><br><br>
+  <label for="lname">Đào Sông Danh - 2121050308:</label>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <input type="submit" value="Submit">
+  <input type="submit" formaction="/action_page2.php" value="Submit as Admin">
+</form>
+
+<!--The formenctype Attribute-->
+<form action="/action_page_binary.asp" method="post">
+  <label for="fname">Đào Sông Danh - 2121050308:</label>
+  <input type="text" id="fname" name="fname" value="John"><br><br>
+  <input type="submit" value="Submit">
+  <input type="submit" formenctype="multipart/form-data" value="Submit as Multipart/form-data">
+</form>
+
+<!--The formmethod Attribute-->
+<form action="/action_page.php" method="get">
+  <label for="fname">Đào Sông Danh - 2121050308:</label>
+  <input type="text" id="fname" name="fname" value="John"><br><br>
+  <label for="lname">Đào Sông Danh - 2121050308:</label>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <input type="submit" value="Submit using GET">
+  <input type="submit" formmethod="post" value="Submit using POST">
+</form>
+
+<!--The formtarget Attribute-->
+<form action="/action_page.php">
+  <label for="fname">Đào Sông Danh - 2121050308:</label>
+  <input type="text" id="fname" name="fname" value="John"><br><br>
+  <label for="lname">Đào Sông Danh - 2121050308:</label>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <input type="submit" value="Submit">
+  <input type="submit" formtarget="_blank" value="Submit to a new window/tab">
+</form>
+
+<!--The formnovalidate Attribute-->
+<form action="/action_page.php">
+  <label for="email">Đào Sông Danh - 2121050308:</label>
+  <input type="email" id="email" name="email" value="example@example.com"><br><br>
+  <input type="submit" value="Submit">
+  <input type="submit" formnovalidate="formnovalidate" value="Submit without validation">
+</form>
+
+<!--The novalidate Attribute-->
+<form action="/action_page.php" novalidate>
+  <label for="email">Đào Sông Danh - 2121050308:</label>
+  <input type="email" id="email" name="email" value="example@example.com"><br><br>
+  <input type="submit" value="Submit">
+</form>

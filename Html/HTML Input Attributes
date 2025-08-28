@@ -1,0 +1,84 @@
+<!--The value Attribute-->
+  <form>
+    <label for="fname">Đào Sông Danh - 2121050308</label><br>
+    <input type="text" id="fname" name="fname" value="John"><br>
+    <label for="lname">Đào Sông Danh - 2121050308</label><br>
+    <input type="text" id="lname" name="lname" value="Doe">
+  </form>
+
+  <!--The readonly Attribute-->
+  <form>
+    <label for="fname">Đào Sông Danh - 2121050308</label><br>
+    <input type="text" id="fname" name="fname" value="John" readonly><br>
+    <label for="lname">Đào Sông Danh - 2121050308</label><br>
+    <input type="text" id="lname" name="lname" value="Doe">
+  </form>
+
+  <!--The disabled Attribute-->
+  <form>
+    <label for="fname">Đào Sông Danh - 2121050308</label><br>
+    <input type="text" id="fname" name="fname" value="John" disabled><br>
+    <label for="lname">Đào Sông Danh - 2121050308</label><br>
+    <input type="text" id="lname" name="lname" value="Doe">
+  </form>
+
+  <!--The size Attribute-->
+  <form>
+    <label for="fname">Đào Sông Danh - 2121050308</label><br>
+    <input type="text" id="fname" name="fname" size="50"><br>
+    <label for="pin">Đào Sông Danh - 2121050308</label><br>
+    <input type="text" id="pin" name="pin" size="4">
+  </form>
+
+  <!--The maxlength Attribute-->
+  <form>
+    <label for="fname">Đào Sông Danh - 2121050308</label><br>
+    <input type="text" id="fname" name="fname" size="50"><br>
+    <label for="pin">Đào Sông Danh - 2121050308</label><br>
+    <input type="text" id="pin" name="pin" maxlength="4" size="4">
+  </form>
+
+  <!--The min and max Attributes-->
+  <form>
+    <label for="datemax">Đào Sông Danh - 2121050308</label>
+    <input type="date" id="datemax" name="datemax" max="1979-12-31"><br><br>
+
+    <label for="datemin">Đào Sông Danh - 2121050308</label>
+    <input type="date" id="datemin" name="datemin" min="2000-01-02"><br><br>
+
+    <label for="quantity">Đào Sông Danh - 2121050308</label>
+    <input type="number" id="quantity" name="quantity" min="1" max="5">
+  </form>
+
+  <!--The multiple Attribute-->
+  <form>
+    <label for="files">Đào Sông Danh - 2121050308</label>
+    <input type="file" id="files" name="files" multiple>
+  </form>
+
+  <!--The pattern Attribute-->
+  <form>
+    <label for="country_code">Đào Sông Danh - 2121050308</label>
+    <input type="text" id="country_code" name="country_code"
+    pattern="[A-Za-z]{3}" title="Đào Sông Danh - 2121050308">
+  </form>
+
+  <!--The placeholder Attribute-->
+  <form>
+    <label for="phone">Đào Sông Danh - 2121050308</label>
+    <input type="tel" id="phone" name="phone"
+    placeholder="Đào Sông Danh - 2121050308"
+    pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+  </form>
+
+  <!--The required Attribute-->
+  <form>
+    <label for="username">Đào Sông Danh - 2121050308</label>
+    <input type="text" id="username" name="username" required>
+  </form>
+
+  <!--The step Attribute-->
+  <form>
+    <label for="points">Đào Sông Danh - 2121050308</label>
+    <input type="number" id="points" name="points" step="3">
+  </form>
