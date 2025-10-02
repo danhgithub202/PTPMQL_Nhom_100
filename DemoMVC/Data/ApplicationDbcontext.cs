@@ -1,5 +1,4 @@
 using Microsoft.EntityFrameworkCore;
-using DemoMVC.Models;
 
 namespace DemoMVC.Models
 {
@@ -10,5 +9,6 @@ namespace DemoMVC.Models
         }
 
         public DbSet<Person> Person { get; set; }
+        public DbSet<Employee> Employees { get; set; }   // 👈 thêm dòng này
     }
 }

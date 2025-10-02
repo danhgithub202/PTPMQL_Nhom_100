@@ -1,0 +1,17 @@
+@{
+    ViewBag.Title = "Test AutoGenCode";
+}
+
+<h2>Test AutoGenCode</h2>
+
+<form asp-action="Index" method="post">
+    <label for="inputId">Nhập mã (ví dụ: SP01):</label>
+    <input type="text" id="inputId" name="inputId" />
+    <button type="submit">Sinh mã mới</button>
+</form>
+
+@if (ViewBag.NewCode != null)
+{
+    <h3>Kết quả:</h3>
+    <p>@ViewBag.InputId → <b>@ViewBag.NewCode</b></p>
+}
