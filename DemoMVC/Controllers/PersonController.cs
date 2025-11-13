@@ -1,12 +1,17 @@
 using DemoMVC.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.Data;
+using DemoMVC.Models.Process;
+using OfficeOpenXml; // THÊM ĐỂ DÙNG EPPlus
+using System.IO;     // THÊM ĐỂ DÙNG MemoryStream
 
 namespace DemoMVC.Controllers
 {
     public class PersonController : Controller
     {
         private readonly ApplicationDbContext _context;
+        private ExcelProcess _excelProcess = new ExcelProcess();
 
         public PersonController(ApplicationDbContext context)
         {
@@ -17,7 +22,6 @@ namespace DemoMVC.Controllers
         {
             var model = await _context.Person.ToListAsync();
             return View(model);
-           
         }
 
         public IActionResult Create()
@@ -119,6 +123,79 @@ namespace DemoMVC.Controllers
         private bool PersonExists(string id)
         {
             return _context.Person.Any(e => e.PersonId == id);
+        }
+
+        public async Task<IActionResult> Upload()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Upload(IFormFile file)
+        {
+            if (file != null)
+            {
+                string fileExtension = Path.GetExtension(file.FileName);
+                if (fileExtension != ".xls" && fileExtension != ".xlsx")
+                {
+                    ModelState.AddModelError("", "Please choose excel file to upload!");
+                }
+                else
+                {
+                    // rename file when upload to server
+                    var fileName = DateTime.Now.ToShortTimeString() + fileExtension;
+                    var filePath = Path.Combine(Directory.GetCurrentDirectory() + "/Uploads/Excels", fileName);
+                    var fileLocation = new FileInfo(filePath).ToString();
+
+                    using (var stream = new FileStream(filePath, FileMode.Create))
+                    {
+                        // save file to server
+                        await file.CopyToAsync(stream);
+                        //read data from excel file fill DataTable
+                        var dt = _excelProcess.ExcelToDataTable(fileLocation);
+                        //using for loop to read data from dt
+                        for (int i = 0; i < dt.Rows.Count; i++)
+                        {
+                            //create new Person object
+                            var ps = new Person();
+                            //set value to attributes
+                            ps.PersonId = dt.Rows[i][0].ToString();
+                            ps.FullName = dt.Rows[i][1].ToString();
+                            ps.Address = dt.Rows[i][2].ToString();
+                            //add object to context
+                            _context.Add(ps);
+                        }
+                        await _context.SaveChangesAsync();
+                        return RedirectToAction(nameof(Index));
+                    }
+                }
+            }
+
+            return View();
+        }
+
+        // THÊM MỚI: XUẤT EXCEL
+        public IActionResult Download()
+        {
+            var fileName = "DanhSachPerson.xlsx";
+
+            using (var package = new ExcelPackage())
+            {
+                // DÙNG CHO EPPLUS 8+
+                ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
+
+                var ws = package.Workbook.Worksheets.Add("Sheet1");
+                ws.Cells["A1"].Value = "PersonID";
+                ws.Cells["B1"].Value = "FullName";
+                ws.Cells["C1"].Value = "Address";
+
+                var list = _context.Person.ToList();
+                ws.Cells["A2"].LoadFromCollection(list);
+
+                var stream = new MemoryStream(package.GetAsByteArray());
+                return File(stream, "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", fileName);
+            }
         }
     }
 }

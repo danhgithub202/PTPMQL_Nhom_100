@@ -9,6 +9,8 @@ namespace DemoMVC.Models
         }
 
         public DbSet<Person> Person { get; set; }
-        public DbSet<Employee> Employees { get; set; }   // 👈 thêm dòng này
+        public DbSet<Employee> Employee { get; set; } // 🟢 Thêm dòng này
+        public DbSet<HeThongPhanPhoi> HeThongPhanPhoi { get; set; }
+        public DbSet<DaiLy> DaiLy { get; set; }
     }
 }
